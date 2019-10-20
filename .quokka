@@ -1,0 +1,9 @@
+{
+    "ts": {
+        "compilerOptions": {
+            "target": "esnext",
+            "experimentalDecorators": true,
+            "emitDecoratorMetadata": true
+        }
+    }
+}
