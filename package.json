@@ -1,6 +1,6 @@
 {
     "name": "@nimashoghi/test",
-    "version": "1.0.0",
+    "version": "0.0.2",
     "bin": {
         "nsh-test-postinstall": "dist/postinstall.js"
     },
@@ -9,7 +9,9 @@
     "license": "MIT",
     "scripts": {
         "build": "tsc --build",
-        "watch": "tsc --build --watch"
+        "watch": "tsc --build --watch",
+        "prepublish": "yarn build",
+        "publish:public": "yarn publish --access public"
     },
     "devDependencies": {
         "@types/jest": "^24.0.19",
